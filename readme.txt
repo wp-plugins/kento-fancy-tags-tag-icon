@@ -1,10 +1,10 @@
-=== Kento Fancy Tags ===
+=== Kento Fancy Tags - Tag Icon ===
 Contributors: hasanrang05
 Donate link: 
 Tags: tag icon, tag image, tag icon wordpress, stackoverflow tag icon,wordpress tag, icon tag
 Requires at least: 3.8
-Tested up to: 3.8
-Stable tag: 1.2
+Tested up to: 3.8.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,9 +37,9 @@ Plugin Features
 3. Before test plugin you need to add some tag on your single post.
 4. After acivate plugin you will see menu at left menu bar "KFT Settings" please set value for<br /> 
 
-<strong>Popup box top position on hover: an integer top from mouse position(could be use nagetive)</strong><br /> 
-<strong>Popup box left position on hover:an integer left from mouse position(could be use nagetive)</strong><br /> 
-<strong>Display popup box: to hide hover box on mouse hover on tag link</strong><br /><br /> 
+<strong>Popup box top position on hover:</strong> an integer top from mouse position(could be use nagetive)<br /> 
+<strong>Popup box left position on hover:</strong>an integer left from mouse position(could be use nagetive)<br /> 
+<strong>Display popup box:</strong> to hide hover box on mouse hover on tag link<br /><br /> 
 
 <strong>How to display tag icon ?</strong><br /> 
 To display tag icon you must save an .png image exactly same as image name of tag slug to <strong>"tag-images"</strong> folder or directory on this plugin.
@@ -63,4 +63,3 @@ To display tag description you need to fill tag desription under <strong>Posts >
 
 = 1.0 =
 * Initial release
-
