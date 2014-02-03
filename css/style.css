@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#kento-fancy-tags{
+/*border-radius*/
+margin:0;
+padding:0;
+-webkit-border-radius:3px;
+   -moz-border-radius:3px;
+        border-radius:3px;
+/*box-shadow*/
+-webkit-box-shadow:0 5px 13px 1px #9C9C9C;
+   -moz-box-shadow:0 5px 13px 1px #9C9C9C;
+        box-shadow:0 5px 13px 1px #9C9C9C;
+height:130px;
+position:absolute;
+width:250px;
+z-index:999999;
+border:1px solid #000;
+display:none;
+cursor:pointer !important;
+clear:both;
+
+/*linear-gradient*/
+background:-webkit-gradient(linear,left bottom,left top,color-stop(rgba(207,207,207,1),0),color-stop(rgba(254,254,254,1),1));
+background:-webkit-linear-gradient(bottom, rgba(207,207,207,1) 0%, rgba(254,254,254,1) 100%);
+background:   -moz-linear-gradient(bottom, rgba(207,207,207,1) 0%, rgba(254,254,254,1) 100%);
+background:     -o-linear-gradient(bottom, rgba(207,207,207,1) 0%, rgba(254,254,254,1) 100%);
+background:        linear-gradient(bottom, rgba(207,207,207,1) 0%, rgba(254,254,254,1) 100%);
+}
+#kento-fancy-tags:after, #kento-fancy-tags:before{
+bottom:100%;
+left:10%;
+border:1px solid transparent;
+content:" ";
+height:0;
+width:0;
+position:absolute;
+pointer-events:none;
+}
+#kento-fancy-tags:after {
+  border-color: rgba(136, 183, 213, 0) rgba(136, 183, 213, 0) #FFFFFF;
+  border-width: 10px;
+  margin-left: -9px;
+}
+#kento-fancy-tags:before {
+  border-color: rgba(194, 225, 245, 0) rgba(194, 225, 245, 0) #000000;
+  border-width: 11px;
+  margin-left: -10px;
+}
+.kento-fancy-tags-avatar{
+
+height:180px;
+width:180px;
+display: inline-block;
+float:left;
+overflow:hidden;
+}
+
+.kento-fancy-tags-info{
+	display: inline-block;
+
+	height:180px;
+	float:left;
+	width:215px;
+	}
+
+.kento-fancy-tags-name {
+  margin: 10px;
+  height: 25px;
+  overflow:hidden;
+
+}
+	
+.kento-fancy-tags-url {
+
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 0;
+  overflow:hidden;
+}
+
+.kento-fancy-tags-description {
+
+  font-size: 12px;
+  height: 90px;
+  width:210px;
+  margin-left: 10px;
+  margin-top: 5px;
+  overflow:hidden;
+}
+
+
+#kento-fancy-tags #kft-popup-top{
+	display:none;}
+	
+	.entry-content{
+		position:relative !important;}
+	
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////
+
+
+.fancy-tags {
+  background-color:#ddd !important;
+  padding: 2px 3px;
+  text-decoration:none !important;
+}
+
+.fancy-tags img {
+  vertical-align: middle;
+}
+
+.fancy-tags .tag-text {
+  padding-left: 3px;
+}
+
+
+
+
+
+
+.fancy-tags-tooltip{}
+.fancy-tags-tooltip #fancy-tags-header {
+
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  padding: 3px 0;
+  width: 100%;
+}
+#fancy-tags-header .tag-name {
+
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 5px;
+  width: 70%;
+}
+
+
+
+#fancy-tags-header .tag-name img {
+  border-radius: 0 !important;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+#fancy-tags-header .tag-count {
+
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  padding-right: 5px;
+  text-align: right;
+  width: 20%;
+}
+.fancy-tags-tooltip .fancy-tags-description {
+
+  font-size: 11px;
+  height: 90px;
+  line-height: 11px;
+  overflow: hidden;
+}
+
+.fancy-tags-tooltip .fancy-tags-description p {
+  line-height: 16px !important;
+  padding: 5px;
+}
+
+
+#kft-popup-top-value, #kft-popup-left-value, #kft-popup-hide-value{
+  display: none;
+}
+
+
+
+.spinning-square {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+
+    margin: 30px 90px;
+    -webkit-animation: rotatesquare 1.2s infinite ease-in-out;
+    animation: rotatesquare 1.2s infinite ease-in-out;
+}
+
+
+
+
+@-webkit-keyframes rotatesquare {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotatesquare {
+  0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); } 
+  50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); } 
+  100% { transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); }
+}
+
+
+
+
+
