@@ -63,6 +63,7 @@ To display tag description you need to fill tag desription under <strong>Posts >
 
 = 1.1 =
 * Fixup broken icon link.
+* Fix CSS class conflict
 
 = 1.0 =
 * Initial release
