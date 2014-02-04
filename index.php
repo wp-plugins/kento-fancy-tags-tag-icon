@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Kento Fancy Tags
+Plugin Name: Kento Fancy Tags Icon
 Plugin URI: http://kentothemes.com
 Description: Tag icon and tag description on hover box.
 Version: 1.0

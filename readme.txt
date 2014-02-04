@@ -1,4 +1,4 @@
-=== Kento Fancy Tags - Tag Icon ===
+=== Kento Fancy Tags Icon ===
 Contributors: hasanrang05
 Donate link: 
 Tags: tag icon, tag image, tag icon wordpress, stackoverflow tag icon,wordpress tag, icon tag
