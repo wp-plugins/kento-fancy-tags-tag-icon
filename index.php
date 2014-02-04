@@ -3,7 +3,7 @@
 Plugin Name: Kento Fancy Tags
 Plugin URI: http://kentothemes.com
 Description: Tag icon and tag description on hover box.
-Version: 1.0
+Version: 1.1
 Author: KentoThemes
 Author URI: http://kentothemes.com
 License: GPLv2 or later
