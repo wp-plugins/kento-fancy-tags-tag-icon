@@ -30,21 +30,25 @@ function kento_fancy_tags_ajax()
 
 
 
-$image = $tag_icon;
 
-if (@fclose(@fopen($image, "r"))) {
+
+
+
+if (is_exist_image($tag_icon)=="true")
+	{
 		$fancy_tags.= "<div class='fancy-tags-tooltip'>";
 		$fancy_tags.= "<div id='fancy-tags-header'><span class='tag-name'><img width='30px' height='30px' src='".$tag_icon."' />".$tag_name."</span><span class='tag-count'>".$tag_count." post</span></div>";
 		$fancy_tags.= "<div class='fancy-tags-description'>".tag_description($tag_id)."</div>";
 		$fancy_tags.= "</div>";		
-}
+	}
 
-else {
+else
+	{
 		$fancy_tags.= "<div class='fancy-tags-tooltip'>";
 		$fancy_tags.= "<div id='fancy-tags-header'><span class='tag-name'>".$tag_name."</span><span class='tag-count'>".$tag_count." post</span></div>";
 		$fancy_tags.= "<div class='fancy-tags-description'>".tag_description($tag_id)."</div>";
 		$fancy_tags.= "</div>";
-} 
+	} 
 
 	
 		echo $fancy_tags;
@@ -57,7 +61,23 @@ add_action('wp_ajax_nopriv_kento_fancy_tags_ajax', 'kento_fancy_tags_ajax');
 
 
 
-
+function is_exist_image($url)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL,$url);
+    // don't download content
+    curl_setopt($ch, CURLOPT_NOBODY, 1);
+    curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    if(curl_exec($ch)!==FALSE)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 
 
@@ -74,15 +94,12 @@ if ($posttags) {
 
 	$tag_icon = KENTO_FANCY_TAGS_PLUGIN_PATH."tag-images/".$tag->name.".png";
 
-
-
-$image= ($tag_icon);
-
-if (@fclose(@fopen($image, "r"))) {
+if (is_exist_image($tag_icon)=="true") {
 			$the_tags.= "<a href='".get_tag_link($tag->term_id)."' class='fancy-tags' tag-count='".$tag->count."' tag-id='".$tag->term_id."'><img width='16px' height='16px' src='".$tag_icon."' /><span class='tag-text'>".$tag->name."</span></a>, ";
 }
 
-else {
+else
+	{
 			$the_tags.= "<a href='".get_tag_link($tag->term_id)."' class='fancy-tags' tag-count='".$tag->count."' tag-id='".$tag->term_id."'><span class='tag-text'>".$tag->name."</span></a>, ";
 } 
   
