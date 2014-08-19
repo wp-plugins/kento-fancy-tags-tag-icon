@@ -1,5 +1,5 @@
 === Kento Fancy Tags Icon ===
-Contributors: hasanrang05
+Contributors: kentothemes
 Donate link: 
 Tags: tag icon, tag image, tag icon wordpress, stackoverflow tag icon,wordpress tag, icon tag
 Requires at least: 3.8
